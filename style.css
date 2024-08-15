@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+.stikeyCard {
+    display: table; 
+    width: 100%;
+}
+  
+.Sticky_Content{
+    display:table-cell; 
+    padding: 5%;
+    padding-top: 3%;
+    width: 30%;
+    position:fixed;
+    height: 100%;
+  }
+
+.Scrollabe_Content{
+    display: table-cell; 
+    padding: 5%;
+    padding-top: 2%;
+    width: 70%;
+  }
+  .AboutMe_content p{
+    font-family:'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+    font-size: 1.8rem;
+  }
+  .footer {
+    background-color: #f2f2f2;
+    padding: 30px 0;
+    color: #333;
+  }
+  
+  .footer .container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  
+  .footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .footer .copyright {
+    margin-top: 15px;
+  }
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: rgb(255, 183, 0);
+}
+.Contact_content li{
+    display:inline-block;
+    margin-left: 10%;
+}
+.AboutMe_content h1{
+  font-family: "Satisfy",'Times New Roman';
+  font-weight: 400;
+  font-style: normal;
+
+}
+.responsive {
+  width: 100%;
+  max-width: 210px;
+  height: auto;
+}
+img{
+  border-radius:100%;
+}
+@media screen and (max-width: 480px) {
+  .stikeyCard {
+    height: 100%;
+    padding: 5%;
+    text-align: center;
+    margin-top:6%;
+}
+  
+.Sticky_Content{
+  display:contents;
+  height: auto;
+  width: auto;
+  font-size: 1rem;
+  
+   
+  }
+
+.Scrollabe_Content{
+  display:contents;
+  height: auto;
+  width: auto;
+    
+  }
+.AboutMe_content p{
+  font-size: 1.5rem;
+}
+.Skills_content ul {
+  list-style-type: none;
+  display:inline;
+}
+.Skills_content h4{
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+img{
+  border-radius: 100%;
+}
+}
+.container .contactForm .formBox
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.contactForm .formBox .inputBox
+{
+    position: relative;
+    margin-bottom: 35px;
+}
+.contactForm .formBox .inputBox.w50
+{
+    width: 47%;
+}
+.contactForm .formBox .inputBox.w100
+{
+    width: 100%;
+}
+.contactForm .formBox .inputBox input,
+.contactForm .formBox .inputBox textarea 
+{
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #777;
+}
+.contactForm .formBox .inputBox textarea 
+{
+    height: 120px;
+}
+
+.contactForm .formBox .inputBox span 
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+.contactForm .formBox .inputBox input:focus ~ span,
+.contactForm .formBox .inputBox input:valid ~ span,
+.contactForm .formBox .inputBox textarea:focus ~ span, 
+.contactForm .formBox .inputBox textarea:valid ~ span
+{
+    transform: translateY(-20px);
+    font-size:  12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ffbb00;
+    font-weight: 500;
+} 
+.container.contactForm .formBox .inputBox input[type="submit"]         
+{
+    position: relative;
+    cursor: pointer;
+    background: #095a55;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+
+}
+.container .contactForm .formBox .inputBox input[type="submit"]:hover{
+  background: #505050;
+  color: white  ;
+}
+
+
+@media (max-width: 991px)
+{
+    section
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    section::before
+    {
+        display: none;
+    }
+
+    .container
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container .contactForm
+    {
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+    }
+
+    
+    
+}
+
+@media (max-width: 600px)
+{
+    .container .contactForm
+    {
+        padding: 25px;
+    }
+
+    .container .contactForm .formBox .inputBox.w50
+    {
+        width: 100%;
+    }
+}
